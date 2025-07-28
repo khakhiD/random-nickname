@@ -62,7 +62,7 @@ function generatePositiveNickname(maxLength = 10, maxNumber = 99) {
   const animal = data.animals[getRandomInteger(data.animals.length)];
   const number = Math.floor(Math.random() * maxNumber) + 1; // 1-maxNumber 사이의 숫자
   
-  const nickname = `${adjective}${animal}${number}`;
+  const nickname = `${adjective} ${animal}${number}`;
   
   // 글자수 제한
   if (nickname.length > maxLength) {
